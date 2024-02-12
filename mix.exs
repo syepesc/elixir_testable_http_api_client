@@ -7,7 +7,8 @@ defmodule ElixirTestableHttpApiClient.MixProject do
       version: "0.1.0",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      elixirc_paths: elixirc_paths(Mix.env())
     ]
   end
 
@@ -32,4 +33,7 @@ defmodule ElixirTestableHttpApiClient.MixProject do
       {:mox, "~> 1.1", only: [:test]}
     ]
   end
+
+  defp elixirc_paths(:test), do: ["test/support", "lib"]
+  defp elixirc_paths(_), do: ["lib"]
 end
