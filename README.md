@@ -12,8 +12,7 @@ Special thanks to the authors of the amazing doc [Creating testable HTTP API cli
 
 ## What to expect when running the app?
 
-This is only a command app that will run using `iex`. To start having an idea of what the app does start reading `lib/elixir_testable_http_api_client
-/repo_contest.ex`.
+This is an app that only work trough commands typed in the terminal after running it using `iex`. To have an idea of what the app does start reading `lib/elixir_testable_http_api_client/repo_contest.ex`.
 
 ## How to run the project?
 
